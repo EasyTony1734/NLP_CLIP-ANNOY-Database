@@ -73,3 +73,8 @@ Select "No" to input the path where the images are stored, including USB sticks.
 ## Example:   
 "In the nightly silence of the airport, a passenger aircraft stands motionless beside the illuminated runway"
 ![GitHubBild](https://github.com/EasyTony1734/NLP_CLIP-ANNOY-Database/assets/115572886/bc4f5259-4ed9-4357-a48d-09a11d5a5b54)
+
+## Now it's your turn! 
+Here is a link to Google Drive: https://drive.google.com/drive/folders/1a0aRbvdcTmdlWK6IZTtBuQV-LuDBPbqR  
+where you will find a few pictures. Simply download them and put them in a folder. Then prepare for the search. Just follow the instructions and at the end, try to describe one image in English. If you do everything correctly, given the effort of the images, you should see the precisely described image.   
+### So good luck and have fun with it!
