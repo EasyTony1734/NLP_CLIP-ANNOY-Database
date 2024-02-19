@@ -70,6 +70,6 @@ Select "No" to input the path where the images are stored, including USB sticks.
 
 ##### You will return to step 3. If you want to change or create databases, you must enter "Exit" and restart the program.  
 
-##Example:   
+## Example:   
 "In the nightly silence of the airport, a passenger aircraft stands motionless beside the illuminated runway"
 ![GitHubBild](https://github.com/EasyTony1734/NLP_CLIP-ANNOY-Database/assets/115572886/bc4f5259-4ed9-4357-a48d-09a11d5a5b54)
