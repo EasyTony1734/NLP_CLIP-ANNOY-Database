@@ -112,7 +112,7 @@ if new_images_data():
     annoy_db = AnnoyIndex(model.encode_image(torch.zeros((1, 3, 336, 336)).to(device)).shape[1], 'angular')
 
     #SQLite database
-    sqlite_db_path = input("Enter the path to the SQLite database (e.g., Test): ") + ".db"
+    sqlite_db_path = input("Enter the name to the SQLite database (e.g., Test): ") + ".db"
     datenbank_pfad = sqlite_db_path
     verbindung = sqlite3.connect(datenbank_pfad)
     cursor = verbindung.cursor()
@@ -156,7 +156,7 @@ if new_images_data():
     verbindung.close()
 else:
     # Benutzereingabe für Annoy-Datenbank-Pfad
-    annoy_db_path = input("Enter the path to the Annoy database (e.g., Test): ") + ".ann"
+    annoy_db_path = input("Enter the name to the Annoy database (e.g., Test): ") + ".ann"
 
     # Benutzereingabe für SQLite-Datenbank-Pfad
     sqlite_db_path = input("Enter the name of the SQLite database (e.g., Test): ") + ".db"
@@ -196,13 +196,13 @@ while True:
     #Print paths for all found images
     paths = [image_path_id(result_image_item, datenbank_pfad) for result_image_item in result_image_items]
     
-    # Wenn der Benutzer die Bilder nicht in einem Ordner speichern möchte
+    #If the user doesn't want to save the images in a folder
     if not ask_save_to_folder():
         # Benutzereingabe für den Ordnerpfad
         folder_path = input("Please enter the folder path where the images are located: ")
         folder_path = folder_path.strip('""')
 
-        # Ergebnis-Bilder in Spyder anzeigen
+        #Display result images
         for result_image_item, path in zip(result_image_items, paths):
             full_path = os.path.join(folder_path, path)
             if os.path.exists(full_path):
